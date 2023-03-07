@@ -1,0 +1,123 @@
+/* gloval */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: 245, 248, 249;
+  --color-p: 255, 255, 255;
+  --color-gray: 150, 150, 150;
+  --color-dark: 0, 0, 0;
+  --color-b: 56, 183, 234;
+  --color-r: 255, 116, 115;
+  --color-y: 255, 201, 82;
+  --color-g: 109, 200, 191;
+}
+
+body {
+  /* font-family: sans-serif; */
+  background-color: rgb(var(--color-bg));
+  scrollbar-color: #888;
+  scrollbar-base-color: #f1f1f1;
+  scrollbar-width: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.container {
+  width: clamp(250px, 100%, 1000px);
+  margin: auto;
+  padding: 0 1em;
+  position: relative;
+}
+
+hr {
+  border: none;
+  border-bottom: 0.5px solid rgb(var(--color-gray), 0.3);
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(var(--color-dark), 0.6);
+  transition: 0.3s all;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.btn_p {
+  color: rgb(var(--color-dark), 0.6);
+  background-color: transparent;
+  border: 1px solid rgb(var(--color-dark), 0.6);
+  padding: 0.8em 2em;
+  border-radius: 25px;
+  transition: 0.3s all;
+}
+
+.btn_p:hover {
+  color: rgb(var(--color-p));
+  background-color: rgb(var(--color-dark), 0.6);
+  border: 1px solid transparent;
+}
+
+.info_link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1rem;
+  padding: 1.1em 0.7em;
+  border-top: 1px solid rgb(var(--color-dark), 0.1);
+  color: rgb(var(--color-dark), 0.6);
+  text-decoration: none;
+  transition: 0.2s all;
+}
+
+.info_link:hover {
+  background-color: rgb(var(--color-dark), 0.1);
+}
+
+@media screen and (max-width: 980px) {
+  .no_scroll {
+    overflow: hidden;
+  }
+
+  .container {
+    padding: 0 10%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

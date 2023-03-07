@@ -1,0 +1,79 @@
+.about_card {
+  background-color: rgb(var(--color-p));
+  display: flex;
+  margin-top: 2em;
+  padding: 1em;
+}
+
+.about_left_sec {
+  min-width: 300px;
+  padding: 1em;
+  padding-top: 3em;
+}
+
+.about_right_sec {
+  padding: 3em 4em 3em 1em;
+}
+
+.about_avatar {
+  width: 60%;
+  margin-bottom: 2em;
+  min-width: none;
+}
+
+.about_name {
+  color: rgb(var(--color-dark));
+}
+
+.about_work {
+  color: rgb(var(--color-gray));
+  font-size: 1rem;
+}
+
+.owner_discription {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: rgb(var(--color-dark), 0.6);
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.about_link {
+  font-size: 0.9em;
+}
+
+.about_link:last-child {
+  border-bottom: 1px solid rgb(var(--color-dark), 0.1);
+}
+
+.right_sec_top {
+  position: relative;
+}
+
+.about_icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .about_card {
+    flex-wrap: wrap;
+  }
+
+  .about_left_sec,
+  .about_right_sec {
+    min-width: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about_icon {
+    position: static;
+    margin: 0;
+    justify-content: flex-start;
+  }
+}
