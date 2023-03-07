@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import './styles/global.css';
 
-import App from './app';
+import App from './App';
 import ErrorPage from './components/error';
 import Home from './components/Home';
 import AboutMe from './components/AboutMe/AboutMe';
